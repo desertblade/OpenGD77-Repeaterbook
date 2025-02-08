@@ -1,12 +1,12 @@
-Mode: Dump               # Should be 'Default', 'Load' or 'Dump'
+Mode: Default               # Should be 'Default', 'Load' or 'Dump'
 Country: United States
 Email:  #  Valid Email
 # If your radio has GPS, UseLocation will enable calculating the distance from the tower and will allow sorting by distance
-UseLocation: Yes
+UseLocation: 'Yes'   # Yes/No with QUOTES!
 States: # Only Choose States you need. 
   - Oregon
   # - Washington
-Decimal: Point
+Decimal: Point   # use Comma if in EU or use commas instead decimal points
 Zones: 
 #  Max 80 Channels per Zone, will add the closest repeaters if over 80 are found
   Portland:
