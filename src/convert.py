@@ -312,6 +312,7 @@ def main(argv):
 
 	with open('Zones.csv', 'wt', newline='') as csvoutfile:
 		print('Creating Zones.csv')
+		rowct = max(rowct, 180)
 		znswriter = csv.writer(csvoutfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 		znswriter.writerow(['Zone Name'] + list(f'Channel{i}' for i in range(1, maxZoneChannels + 1)))
 		for elem in channelTypesDict:
